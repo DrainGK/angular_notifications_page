@@ -1,5 +1,8 @@
 # angular_notifications_page
 
+![notification_page](https://github.com/DrainGK/angular_notifications_page/assets/25454614/d651bf04-4836-46a1-88d9-059c285fffc8)
+
+
 # The purpose
 
 The challenge is to build out a notification page and being close as possible to the original design.
