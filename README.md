@@ -1,11 +1,11 @@
 # angular_notifications_page
 
-#The purpose
+# The purpose
 
 The challenge is to build out a notification page and being close as possible to the original design.
 I need to distinguish between “read” and “unread” notifications. When clicking on the card or “Mark all as read” button the design should change, and the notification counter should decrease regarding to the number of unread notifications. 
 
-#How to do
+# How to do
 
 First of all I thought about the application structure, which it will help the most before going even further.
 
