@@ -3,7 +3,8 @@
 # The purpose
 
 The challenge is to build out a notification page and being close as possible to the original design.
-I need to distinguish between “read” and “unread” notifications. When clicking on the card or “Mark all as read” button the design should change, and the notification counter should decrease regarding to the number of unread notifications. 
+I need to distinguish between “read” and “unread” notifications. When clicking on the card or “Mark all as read” 
+button the design should change, and the notification counter should decrease regarding to the number of unread notifications. 
 
 # How to do
 
@@ -31,5 +32,18 @@ I’ve created a JSON file to implement the data, then I use JSON server to simu
 ![image](https://github.com/DrainGK/angular_notifications_page/assets/25454614/4d0cbaf3-be2b-4020-abe5-7789bcdecacc)
 
 ![image](https://github.com/DrainGK/angular_notifications_page/assets/25454614/ea0b6e10-7de9-4133-bb27-df901f9a5674)
+
+After that I added inside the shared service a reactive subject from rxjs and observable. That way I can handle asynchronous flows of data. 
+In that case, a counter for the notification. I used it for only one purpose, the check the unread notification and if it’s not equal to zero, 
+change color of the icon.
+
+![image](https://github.com/DrainGK/angular_notifications_page/assets/25454614/e162abe0-c201-4efc-8a1b-0ede99437aa8)
+
+![image](https://github.com/DrainGK/angular_notifications_page/assets/25454614/2cba81eb-36e1-40c2-935f-2fac8f85eb9e)
+
+Only one failure, I wanted to implement a functionality, getting a notification menu like we can have on every apps and I could do it. 
+But the responsive design was broken, which I could fixed it.
+
+
 
 
