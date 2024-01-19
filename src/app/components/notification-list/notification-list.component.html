@@ -1,0 +1,9 @@
+<div class="notification-list-header">
+    <h2>
+        Notifications <span class="notification-count">{{ unreadNotificationsCount }}</span>
+    </h2>
+    <button mat-flat-button (click)="markAllAsRead()">Mark all as read</button>
+</div>
+<div *ngFor="let notification of notifications" class="notifications-container">
+    <app-notifications [notification]="notification" (read)="onRead($event)"></app-notifications>
+</div>

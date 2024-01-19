@@ -1,0 +1,26 @@
+<mat-card 
+    class="notification" 
+    [ngClass]="!notification?.isRead ? 'isRead':''"
+    (click)="markAsRead()"
+    >
+    <mat-card-content>
+        <div mat-card-avatar >
+            <img class="profile-picture" [src]="notification?.user?.avatar" alt="">
+        </div>
+        <div class="notification-content">
+            <div class="desc">
+                <p><strong class="name">{{notification?.user?.name}}</strong><strong class="action">{{notification?.action}}</strong>  @if (!isImageSource(notification?.target ||  '')) {
+                    <strong class="target">{{notification?.target}}</strong>
+                }</p>
+                <div [ngClass]="!notification?.isRead ? 'red-dot':''"></div>
+            </div>
+            <p class="date">{{notification?.timestamp}}</p>
+        </div>
+        @if (isImageSource(notification?.target ||  '')) {
+            <img class="picture" [src]="notification?.target" alt="Target Image">
+        }
+    </mat-card-content>
+    <mat-card-content>
+        <p [ngClass]="notification?.message ? 'message':''">{{notification?.message}}</p>
+    </mat-card-content>
+</mat-card>

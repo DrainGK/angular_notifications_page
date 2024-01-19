@@ -1,0 +1,26 @@
+.notification-list-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 650px;
+
+    .notification-count{
+        background-color: rgb(17, 17, 179);
+        color: white;
+        padding: 0 10px;
+        border-radius: 5px;
+
+        font-size: 1rem;
+    }
+
+    button{
+        color: grey;
+    }
+}
+
+.notifications-container{
+    max-width: 650px;
+    margin: 0 auto;
+}
